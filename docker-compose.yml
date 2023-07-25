@@ -1,0 +1,9 @@
+services:
+  go-blog:
+    build:
+      context: .
+    container_name: go-blog
+    ports:
+      - "8005:8005"
+    volumes:
+      - .:/app:rw,cached
